@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ketcher Editor</title>
+  </head>
+  <body onload="loadPluginInstanceDetailsfromBackend()">
+    <div id="buttons">
+      <button id="save">SAVE</button>
+      <button id="clear">CLEAR</button>
+    </div>
+
+    <iframe
+      id="ifKetcher"
+      src="standalone/index.html"
+      width="1200"
+      height="800"
+    ></iframe>
+    <!-- Load External JavaScript (defer = run after the page has loaded) -->
+    <script defer="defer" src="Ketcher.js"></script>
+    <!--http://pablojs.com/-->
+    <script src="pablo.min.js"></script>
+    </body>
+</html>
